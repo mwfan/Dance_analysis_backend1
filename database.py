@@ -9,8 +9,8 @@ def send_images_example(vid1, vid2):
     # vid1 = os.listdir(r'C:\Users\19494\Downloads\Dori\Videos\vid1')
     # vid2 = os.listdir(r'C:\Users\19494\Downloads\Dori\Videos\vid2')
 
-    public_url1 = sm.upload_file(file_name='dance/{vid1}', local_path=vid1)
-    public_url2 = sm.upload_file(file_name='dance/{vid2}', local_path=vid2)
+    public_url1 = sm.upload_file(file_name=f'dance/{vid1}', local_path=vid1)
+    public_url2 = sm.upload_file(file_name=f'dance/{vid2}', local_path=vid2)
     public_urls.append((public_url1, public_url2))
     print(public_urls)
     return public_urls
