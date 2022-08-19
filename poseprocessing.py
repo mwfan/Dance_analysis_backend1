@@ -430,7 +430,7 @@ def main(videoPath1, videoPath2):
             if arr[dif] >= 15:
                 allDifference.append(arr[dif])
 
-    errorTotal = len(allDifference)
+    errorTotal = sum(allDifference)
     averageError = errorTotal / (len(difference) * 8) * 100
 
     print("your score: " + str(averageError))
